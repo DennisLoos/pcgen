@@ -1,0 +1,22 @@
+# Warsword of Talisid
+CLASS:Warsword of Talisid	HD:12	TYPE:Prestige.PC	SOURCEPAGE:p.	DEFINE:Warsword_of_TalisidLVL|0	BONUS:VAR|Warsword_of_TalisidLVL|CL
+CLASS:Warsword of Talisid	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseAlternateBABProgression,0
+CLASS:Warsword of Talisid	BONUS:VAR|ClassBABModerate|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseFractionalBAB,1
+CLASS:Warsword of Talisid	BONUS:SAVE|BASE.Fortitude|classlevel("APPLIEDAS=NONEPIC")/2+2
+CLASS:Warsword of Talisid	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Warsword of Talisid	BONUS:SAVE|BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+# Todo: pre requisite smite evil
+CLASS:Warsword of Talisid	PREALIGN:LG,NG,CG	PRECHECKBASE:1,BASEAB=7	PRETEXT:Alignment: Any good. Base Attack Bonus +7. Skills: Knowledge (religion) 10 ranks, Diplomacy 10 ranks, Heal 5 ranks. Smite Evil 2/day  Special:Has performed a quest or ritual in direct service of the catlord, Talisid.	PRESKILL:3,Knowledge (religion)=10,Diplomacy=10,Heal=5
+CLASS:Warsword of Talisid	STARTSKILLPTS:2	CSKILL:Bluff|Concentration|Diplomacy|Gather Information|Intimidate|Knowledge (arcana)||Knowledge (local)|Knowledge (Religion)|Knowledge (The Planes)|Search|Sense Motive|Spellcraft|Spot
+###Block
+1:REPEATLEVEL:1	ADD:SPELLCASTER|ANY
+###Block
+1	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Weapon and Armor Proficiency
+1	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Spells Per Day
+1	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Damage Reduction
+1	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Improved Grab
+1	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Warsword Smite
+2	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Bite
+2	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Energy Resistance
+4	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Rake
+5	ABILITY:Warsword of Talisid Class Feature|AUTOMATIC|Warsword of Talisid ~ Pounce
